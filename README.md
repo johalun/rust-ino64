@@ -1,6 +1,7 @@
 # rust-ino64
-A patch to make nightly usable on FreeBSD12-CURRENT post ino64
+A patch to fix breakage on FreeBSD12-CURRENT post ino64
 
+The issue is here #https://github.com/rust-lang/rust/issues/42681
 
 Inspired by the FreeBSD port lang/rust's Makefile
 (BIG thanks to whomever did this!)
