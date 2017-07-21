@@ -2,7 +2,7 @@
 
 CURDIR=`pwd`
 TMP=$CURDIR/build
-FULLPATH=`find $HOME/.rustup/toolchains/nightly-x86_64-unknown-freebsd/ -name "libstd-*.rlib"`
+FULLPATH=`find $HOME/.rustup/toolchains/nightly-x86_64-unknown-freebsd/lib/rustlib/x86_64-unknown-freebsd -name "libstd-*.rlib"`
 FILE=`basename $FULLPATH`
 HASH=`echo $FILE | sed -e 's/.*-\([a-f0-9]*\).*/\1/g'`
 STDINNER=std-$HASH.0.o
